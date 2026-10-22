@@ -25,16 +25,17 @@ h2{font-size:clamp(28px,5vw,40px);margin-bottom:10px}
 .btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;background:var(--acc);color:var(--acc-ink);border:2px solid var(--acc)}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
 :focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.hero{padding:36px 0 56px}
-.hero p{max-width:34em;color:var(--mute);font-size:18px;margin:18px 0 26px}
+.hero{padding:56px 28px 36px;border-radius:14px;background:linear-gradient(180deg,rgba(13,13,13,.55),rgba(13,13,13,.82)),url("hero.jpg") center/cover no-repeat;margin-bottom:56px}
+@media(max-width:560px){.hero{padding:40px 18px 24px}}
+.hero p{max-width:34em;color:#e6e6e0;font-size:18px;margin:18px 0 26px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .bar{display:flex;align-items:center;margin-top:44px;overflow:hidden}
 .bar i{display:block;background:var(--plate);border-radius:3px;flex:none}
 .bar .sl{height:12px;flex:1;min-width:20px;background:var(--mute);opacity:.6;border-radius:0}
 .bar .p1{width:16px;height:120px}.bar .p2{width:14px;height:92px}.bar .p3{width:12px;height:68px}.bar .cl{width:8px;height:30px;background:var(--acc)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;border-top:2px solid var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;border-top:2px solid var(--acc)}
 .stats div{padding:14px 0}.stats b{display:block;font:400 clamp(28px,6vw,44px) "Black Han Sans",sans-serif}
-.stats span{font-size:14px;color:var(--mute)}
+.stats span{font-size:14px;color:#e6e6e0}
 section{padding:56px 0;border-top:1px solid var(--line)}
 .sub{color:var(--mute);margin:0 0 28px;max-width:36em}
 .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
