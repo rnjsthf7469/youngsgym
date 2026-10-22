@@ -66,6 +66,18 @@ input,select{font:inherit;padding:13px 14px;border:1px solid var(--line);border-
 .ok{display:none;padding:14px;border-radius:8px;border:2px solid var(--acc);font-weight:700}
 .sh{font-size:24px;margin:34px 0 14px}
 footer{padding:28px 0 40px;color:var(--mute);font-size:13px;border-top:1px solid var(--line)}
+.top{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;padding:12px 0 0}
+.top a{text-align:center;padding:12px 10px;border-radius:10px;font-weight:700;font-size:14px;border:2px solid transparent}
+.top .k{background:#fee500;color:#111}
+.top .p{border-color:var(--ink);color:var(--ink)}
+.top .n{background:#03c75a;color:#0d0d0d}
+.ev{display:grid;gap:20px;grid-template-columns:1.2fr .8fr;align-items:center;background:var(--surface);border:2px solid var(--acc);border-radius:14px;padding:28px}
+@media(max-width:700px){.ev{grid-template-columns:1fr;padding:22px}}
+.ev .tag{display:inline-block;background:var(--acc);color:var(--acc-ink);font-size:13px;font-weight:700;padding:3px 12px;border-radius:999px;margin-bottom:12px}
+.ev h3{font-size:clamp(24px,5vw,34px);margin-bottom:10px}
+.ev p{margin:0 0 18px;color:var(--mute)}
+.ev .big{font:400 clamp(52px,11vw,76px) "Black Han Sans",sans-serif;color:var(--acc);line-height:1}
+.ev .big small{display:block;font:400 14px "Noto Sans KR",sans-serif;color:var(--mute);margin-top:8px}
 .fix{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;justify-content:center}
 .fix a{flex:1;max-width:260px;text-align:center;padding:12px;border-radius:999px;font-weight:700}
 .fix .c{background:var(--acc);color:var(--acc-ink)}.fix .t{border:2px solid var(--ink)}
@@ -73,17 +85,32 @@ footer{padding:28px 0 40px;color:var(--mute);font-size:13px;border-top:1px solid
 </head>
 <body>
 <div class="wrap">
+<div class="top"><a class="k" href="https://pf.kakao.com/">카카오톡 채널 문의</a><a class="p" href="tel:01077754020">전화 문의 · 010-7775-4020</a><a class="n" href="https://talk.naver.com/">네이버 톡톡 문의</a></div>
 <header class="hd"><a class="logo" href="#top">영스짐 군포</a>
-<nav><a href="#facility">시설</a><a href="#pt">PT</a><a href="#price">가격</a><a href="#visit">오시는 길</a></nav></header>
+<nav><a href="#event">이벤트</a><a href="#facility">시설</a><a href="#pt">PT</a><a href="#price">가격</a><a href="#visit">오시는 길</a></nav></header>
 
 <main id="top">
 <div class="hero">
 <h1>오늘 한 세트가<br>내일의 몸이 됩니다</h1>
 <p>군포 24시간 헬스장 영스짐입니다. 운동이 처음이어도 괜찮아요. 목표를 먼저 듣고, 기구 사용법부터 운동 순서까지 알려 드립니다.</p>
-<div class="cta"><a class="btn" href="#apply">무료 체험 신청</a><a class="btn ghost" href="#price">가격 보기</a></div>
+<div class="cta"><a class="btn" href="#apply">무료 체험 신청</a><a class="btn ghost" href="#event">이벤트 보기</a></div>
 <div class="bar" aria-hidden="true"><i class="p1"></i><i class="p2"></i><i class="p3"></i><i class="cl"></i><i class="sl"></i><i class="cl"></i><i class="p3"></i><i class="p2"></i><i class="p1"></i></div>
 <div class="stats"><div><b>8만원</b><span>헬스 1개월</span></div><div><b>20명</b><span>10개월 특가 선착순</span></div><div><b>100회</b><span>PT 최대 패키지</span></div></div>
 </div>
+
+<section id="event">
+<h2>메인 이벤트</h2>
+<p class="sub">선착순 20명에게만 드리는 특가입니다.</p>
+<div class="ev">
+<div>
+<span class="tag">선착순 20명</span>
+<h3>헬스 10개월 + 1:1 S.PT 10회</h3>
+<p>운동복 또는 락커 중 하나를 골라 드려요.</p>
+<div class="cta"><a class="btn" href="tel:01077754020">이벤트 전화 문의</a><a class="btn ghost" href="#apply">무료 체험 신청</a></div>
+</div>
+<div class="big">49만원<small>헬스 10개월 + S.PT 10회</small></div>
+</div>
+</section>
 
 <section id="facility">
 <h2>등록 전에 시설부터 확인하세요</h2>
